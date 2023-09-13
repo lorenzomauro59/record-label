@@ -11,13 +11,13 @@ export default function Home() {
   const artists = [
     {
       name: "Daian Verna",
-      imageUrl: "/public.unnamed.jpg",
+      imageUrl: "/unnamed.jpg",
       description:
         "Hailing from Charlone in Buenos Aires, Daian crafts pulsating rhythms that resonate with the urban heartbeat of his hometown. Marrying intricate synths with deep basslines, he has become a rising star, pushing the boundaries of techno with every track.",
     },
     {
       name: "Lorenzo Mauro",
-      imageUrl: "/public.unnamed2.jpg",
+      imageUrl: "/unnamed2.jpg",
       description:
         "Born in the vibrant city of Rosario, Santa Fe, Lorenzo is a techno maestro whose soundscapes transport listeners to otherworldly dimensions. With a knack for blending hypnotic beats with ethereal overtones, he's gained recognition as a pioneer in the Argentinian techno scene.",
     },
@@ -44,7 +44,7 @@ export default function Home() {
         ))}
       </div>
       <div className="mt-10">
-        <h1>Contact Us</h1>
+        <h1>Contact Us/ Demo</h1>
       </div>
       <div className="mt-20">
         <ContactUs />

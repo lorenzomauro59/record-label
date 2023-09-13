@@ -1,27 +1,52 @@
+"use client";
+
+import { FaBars } from "react-icons/fa";
+import { useState } from "react";
 import Link from "next/link";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="bg-white flex justify-between items-center h-16">
-      <div className="text-black hover:text-gray-400">
-        <Link className="px-2 py-1" href="/">
-          Logo
-        </Link>
-      </div>
-      <ul className="flex">
-        <li className="text-black hover:text-gray-400">
+    <nav className="bg-white flex flex-col md:flex-row justify-between items-center">
+      <div className="flex justify-between w-full md:w-auto">
+        <div className="text-black hover:text-gray-400">
           <Link className="px-2 py-1" href="/">
-            Artists
+            Logo
           </Link>
-        </li>
+        </div>
+        <div
+          className="md:hidden px-2 py-1 cursor-pointer transition-transform ease-in-out duration-300 transform hover:scale-110"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <FaBars size={24} color="black" />
+        </div>
+      </div>
+      <ul
+        className={`${
+          isOpen
+            ? "flex flex-col space-y-2 md:space-x-2 w-full md:w-auto"
+            : "hidden md:flex md:space-x-2"
+        }`}
+      >
         <li className="text-black hover:text-gray-400">
-          <Link className="px-2 py-1" href="/">
+          <Link className="px-2 py-1 block" href="/">
             About Us
           </Link>
         </li>
         <li className="text-black hover:text-gray-400">
-          <Link className="px-2 py-1" href="/">
-            Contact Us
+          <Link className="px-2 py-1 block" href="/">
+            Our Music
+          </Link>
+        </li>
+        <li className="text-black hover:text-gray-400">
+          <Link className="px-2 py-1 block" href="/">
+            Our Artist
+          </Link>
+        </li>
+        <li className="text-black hover:text-gray-400">
+          <Link className="px-2 py-1 block" href="/">
+            Contact Us / Demo
           </Link>
         </li>
       </ul>

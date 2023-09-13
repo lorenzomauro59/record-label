@@ -24,6 +24,8 @@ export default function ContactForm() {
       data.soundcloudLink = String(event.target.soundcloudLink.value);
     }
 
+    console.log(data);
+
     const response = await fetch("/api/contact", {
       method: "POST",
       headers: {
@@ -45,37 +47,41 @@ export default function ContactForm() {
       setLoading(false);
     }
   }
+
   return (
     <form onSubmit={handleSubmit}>
-      <div className="w-full flex flex-col my-4">
-        <label className="font-bold text-white" htmlFor="name">
-          Name
-        </label>
-        <input
-          type="text"
-          minLength={3}
-          maxLength={150}
-          required
-          className=" p-4 bg-gray-50 border border-gray-100 text-black "
-          autoComplete="off"
-          id="name"
-        />
+      <div className="md:flex">
+        <div className="w-full md:w-1/2 flex flex-col my-4 md:mr-4">
+          <label className="font-bold text-white" htmlFor="name">
+            Name
+          </label>
+          <input
+            type="text"
+            minLength={3}
+            maxLength={150}
+            required
+            className="p-4 bg-gray-50 border border-gray-100 text-black"
+            autoComplete="off"
+            id="name"
+          />
+        </div>
+        <div className="w-full md:w-1/2 flex flex-col my-4 md:ml-4">
+          <label className="font-bold text-white" htmlFor="email">
+            Email
+          </label>
+          <input
+            type="email"
+            minLength={5}
+            maxLength={150}
+            required
+            className="p-4 bg-gray-50 border border-gray-100 text-black"
+            autoComplete="off"
+            id="email"
+          />
+        </div>
       </div>
+
       <div className="w-full flex flex-col my-4">
-        <label className="font-bold text-white" htmlFor="email">
-          Email
-        </label>
-        <input
-          type="email"
-          minLength={5}
-          maxLength={150}
-          required
-          className=" p-4 bg-gray-50 border border-gray-100 text-black"
-          autoComplete="off"
-          id="email"
-        />
-      </div>
-      <div className="w-full flex flex-col my-4 ">
         <label className="font-bold text-white" htmlFor="demoSubmission">
           <input
             type="checkbox"

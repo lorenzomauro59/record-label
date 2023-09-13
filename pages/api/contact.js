@@ -4,6 +4,8 @@ export default async (req, res) => {
   if (req.method === "POST") {
     const { name, email, message, soundcloudLink } = req.body;
 
+    const user = process.env.EMAIL_USER;
+
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -13,17 +15,15 @@ export default async (req, res) => {
     });
 
     const mailOptions = {
-      from: email,
-      to: "contacto.surbsas@gmail.com", // Reemplaza con el correo al que quieras enviar
-      subject: "Nuevo mensaje de contacto",
+      from: user,
+      to: "holobeatrecords@gmail.com",
+      replyTo: email,
+      subject: `New message from ${name}`,
       html: `
-                <h3>Nuevo Mensaje de ${name}</h3>
-                <p>${message}</p>
-                ${
-                  soundcloudLink
-                    ? `<p>SoundCloud Link: ${soundcloudLink}</p>`
-                    : ""
-                }
+                <h3>New message from ${name}</h3>
+                <p>Email: ${email}</p>
+                <p>Message: ${message}</p>
+                ${soundcloudLink ? `<p>Demo link: ${soundcloudLink}</p>` : ""}
             `,
     };
 
