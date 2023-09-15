@@ -3,7 +3,7 @@ import Image from "next/image";
 function ArtistCard({ artist }) {
   return (
     <div className="p-4 mb-10">
-      <div className="relative w-[200px] h-[250px] md:w-[300px] md:h-[350px] lg:w-[400px] lg:h-[450px] xl:w-[450px] xl:h-[500px]">
+      <div className="relative w-[250px] h-[300px] md:w-[300px] md:h-[350px] lg:w-[400px] lg:h-[450px] xl:w-[450px] xl:h-[500px]">
         <Image
           src={artist.imageUrl}
           alt={artist.name}

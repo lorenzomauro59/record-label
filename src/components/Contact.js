@@ -51,7 +51,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="md:flex">
-        <div className="w-full md:w-1/2 flex flex-col my-4 md:mr-4">
+        <div className="w-full md:w-1/2 flex flex-col my-4 md:mr-2">
           <label className="font-bold text-white" htmlFor="name">
             Name
           </label>
@@ -63,9 +63,10 @@ export default function ContactForm() {
             className="p-4 bg-gray-50 border border-gray-100 text-black"
             autoComplete="off"
             id="name"
+            placeholder="Name"
           />
         </div>
-        <div className="w-full md:w-1/2 flex flex-col my-4 md:ml-4">
+        <div className="w-full md:w-1/2 flex flex-col my-4 md:ml-2">
           <label className="font-bold text-white" htmlFor="email">
             Email
           </label>
@@ -77,13 +78,15 @@ export default function ContactForm() {
             className="p-4 bg-gray-50 border border-gray-100 text-black"
             autoComplete="off"
             id="email"
+            placeholder="Email"
           />
         </div>
       </div>
 
-      <div className="w-full flex flex-col my-4">
-        <label className="font-bold text-white" htmlFor="demoSubmission">
+      <div className="w-full flex flex my-4">
+        <label className="font-bold text-white mr-4" htmlFor="demoSubmission">
           <input
+            className="mr-1"
             type="checkbox"
             id="demoSubmission"
             onChange={handleCheckboxChange}
@@ -91,7 +94,7 @@ export default function ContactForm() {
           Demo Submission
         </label>
         <label className="font-bold text-white" htmlFor="inquiries">
-          <input type="checkbox" id="inquiries" />
+          <input className="mr-1" type="checkbox" id="inquiries" />
           Inquiries
         </label>
       </div>
@@ -99,7 +102,7 @@ export default function ContactForm() {
       {showInput && (
         <div className="w-full flex flex-col my-4">
           <label className="font-bold text-white" htmlFor="soundcloudLink">
-            SoundCloud Private Link
+            Soundcloud Private Link
           </label>
           <input
             type="text"
@@ -121,15 +124,18 @@ export default function ContactForm() {
           maxLength={500}
           id="message"
           className="w-full p-4 bg-gray-50 border border-gray-100 text-black"
+          placeholder="Write your message..."
         />
       </div>
-      <button
-        type="submit"
-        disabled={loading}
-        className="px-4 py-2 w-40 bg-gray-700 disabled:bg-gray-400 disabled:text-gray-100 text-white font-medium mt-4"
-      >
-        Send
-      </button>
+      <div className="flex justify-center items-center mt-4">
+        <button
+          type="submit"
+          disabled={loading}
+          className="px-4 py-2 w-40 bg-gray-800 disabled:bg-gray-400 disabled:text-gray-100 text-white font-medium"
+        >
+          Send
+        </button>
+      </div>
     </form>
   );
 }

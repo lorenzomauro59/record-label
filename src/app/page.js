@@ -5,8 +5,7 @@ import ContactUs from "@/components/Contact";
 
 export default function Home() {
   const soundCloudEmbedCode = `
-  <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=178173473/size=large/bgcol=333333/linkcol=4ec5ec/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://diffusereality.bandcamp.com/album/lorenzo-mauro-behind-space">Lorenzo Mauro - Behind Space de Diffuse Reality Records</a></iframe>
-  `;
+  <iframe style="border: 0; width: 400px; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=420316729/size=large/bgcol=333333/linkcol=ffffff/artwork=small/transparent=true/" seamless><a href="https://tnrmedia.bandcamp.com/album/peers">Peers de Lorenzo Mauro</a></iframe>`;
 
   const artists = [
     {
@@ -26,17 +25,17 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-12">
       <div>
-        <h1>About Us</h1>
+        <h2 className="text-xl font-semibold leading-tight">About Us</h2>
       </div>
       <div className="mt-20">
         <AboutUs />
       </div>
       <div className="mt-20">
-        <h1>Our Music</h1>
+        <h2 className="text-xl font-semibold leading-tight">Our Music</h2>
       </div>
       <BandcampPlayer embedCode={soundCloudEmbedCode} />
       <div className="mt-20">
-        <h1>Our Artists</h1>
+        <h2 className="text-xl font-semibold leading-tight">Our Artists</h2>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center mt-20">
         {artists.map((artist, index) => (
@@ -44,7 +43,9 @@ export default function Home() {
         ))}
       </div>
       <div className="mt-10">
-        <h1>Contact Us/ Demo</h1>
+        <h2 className="text-xl font-semibold leading-tight">
+          Contact Us/ Demo
+        </h2>
       </div>
       <div className="mt-20">
         <ContactUs />

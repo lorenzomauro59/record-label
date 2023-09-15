@@ -1,19 +1,31 @@
 import Link from "next/link";
+import { FaBandcamp, FaSoundcloud, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <nav className="flex justify-center items-center p-24">
-      <ul>
-        <li>
-          <Link href="http://www.soundcloud.com">Soundcloud</Link>
-        </li>
-        <li>
-          <Link href="http://www.instagram.com">Instagram</Link>
-        </li>
-        <li>
-          <Link href="http://www.twitter.com">Twitter</Link>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <nav>
+        <ul className="flex justify-center items-center pt-16 mt-20 border-t border-gray-100">
+          <li className="m-8">
+            <Link href="http://www.soundcloud.com">
+              <FaSoundcloud size={32} />
+            </Link>
+          </li>
+          <li className="m-8">
+            <Link href="https://www.instagram.com/holobeatrecords/">
+              <FaInstagram size={32} />
+            </Link>
+          </li>
+          <li className="m-8">
+            <Link href="http://www.bandcamp.com">
+              <FaBandcamp size={32} />
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      <div className="flex justify-center items-center mb-16">
+        <p>HoloBeat</p>
+      </div>
+    </>
   );
 }
