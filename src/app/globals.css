@@ -25,3 +25,19 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#about-us::before,
+#our-music::before,
+#our-artists::before,
+#contact-us::before {
+  content: "";
+  display: block;
+  height: 3rem; 
+  margin-top: 3rem; 
+  visibility: hidden;
+}
+

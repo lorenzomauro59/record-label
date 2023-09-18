@@ -2,6 +2,7 @@ import BandcampPlayer from "@/components/BandcampPlayer";
 import ArtistCard from "../components/ArtistCard";
 import AboutUs from "@/components/About";
 import ContactUs from "@/components/Contact";
+import GifContainer from "@/components/Gif";
 
 export default function Home() {
   const soundCloudEmbedCode = `
@@ -25,16 +26,20 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center p-12">
       <div>
+        <GifContainer />
+      </div>
+      <div id="about-us">
         <h2 className="text-xl font-semibold leading-tight">About Us</h2>
       </div>
       <div className="mt-20">
         <AboutUs />
       </div>
-      <div className="mt-20">
+
+      <div id="our-music" className="mt-20">
         <h2 className="text-xl font-semibold leading-tight">Our Music</h2>
       </div>
       <BandcampPlayer embedCode={soundCloudEmbedCode} />
-      <div className="mt-20">
+      <div id="our-artists" className="mt-20">
         <h2 className="text-xl font-semibold leading-tight">Our Artists</h2>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center mt-20">
@@ -42,7 +47,7 @@ export default function Home() {
           <ArtistCard key={index} artist={artist} />
         ))}
       </div>
-      <div className="mt-10">
+      <div id="contact-us" className="mt-10">
         <h2 className="text-xl font-semibold leading-tight">
           Contact Us/ Demo
         </h2>
