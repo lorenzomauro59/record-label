@@ -15,7 +15,7 @@ export default function Header() {
             <img
               src="/HolobeatLogo(web02).png"
               alt="Holobeat-Logo"
-              className="w-15 h-12"
+              className="w-15 h-12 animate-slideIn"
             />
           </Link>
         </div>

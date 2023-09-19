@@ -4,8 +4,8 @@ import { useInView } from "react-intersection-observer";
 
 const GifContainer = () => {
   const [ref, inView] = useInView({
-    triggerOnce: true, // Esto asegura que la animación se ejecute solo una vez
-    threshold: 0.1, // Al menos el 10% del elemento debe estar visible para activar el observer
+    triggerOnce: true,
+    threshold: 0.1,
   });
 
   return (
