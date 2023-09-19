@@ -8,7 +8,7 @@ export default function Home() {
   const soundCloudEmbedCode = `
   <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=420316729/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/transparent=true/" seamless><a href="https://tnrmedia.bandcamp.com/album/peers">Peers de Lorenzo Mauro</a></iframe>`;
 
-  const SpotifyEmbedCode = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3Gb8VJ7tOfKQIohOcuh4bz?utm_source=generator&theme=0" width="80%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+  const SpotifyEmbedCode = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3Gb8VJ7tOfKQIohOcuh4bz?utm_source=generator&theme=0" width= "350px" height="468" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
 
   const artists = [
     {
@@ -43,7 +43,7 @@ export default function Home() {
             key={index}
             artist={artist}
             animationClass={
-              index === 0 ? "animate-slideInDelayed" : "animate-slideIn"
+              index === 1 ? "animate-slideInDelayed" : "animate-slideIn"
             }
           />
         ))}

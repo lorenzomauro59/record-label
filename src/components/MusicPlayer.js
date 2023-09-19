@@ -16,16 +16,16 @@ export default function MusicPlayer({ embedCode, spotifyEmbedCode }) {
       </div>
       <div
         ref={ref}
-        className="flex flex-col mb-10 md:flex-row justify-center  space-y-4 md:space-y-0 md:space-x-4"
+        className="flex flex-col mb-20 md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4"
       >
         <div
-          className={`flex justify-center transform translate-x-[-100%] opacity-0 ${
+          className={`flex justify-center w-full md:w-1/2 transform translate-x-[-100%] opacity-0 ${
             inView ? "animate-slideInLeft" : ""
           }`}
           dangerouslySetInnerHTML={{ __html: embedCode }}
         />
         <div
-          className={`flex justify-center transform translate-x-[100%] opacity-0 ${
+          className={`flex justify-center w-full md:w-1/2 transform translate-x-[100%] opacity-0 ${
             inView ? "animate-slideInRight" : ""
           }`}
           dangerouslySetInnerHTML={{ __html: spotifyEmbedCode }}
