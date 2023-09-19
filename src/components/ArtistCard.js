@@ -1,8 +1,21 @@
+"use client";
 import Image from "next/image";
 
-function ArtistCard({ artist }) {
+import { useInView } from "react-intersection-observer";
+
+function ArtistCard({ artist, animationClass }) {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <div className="p-4 mb-10">
+    <div
+      ref={ref}
+      className={`p-4 mb-10 transform translate-x-[-100%] opacity-0 ${
+        inView ? animationClass : ""
+      }`}
+    >
       <div className="relative w-[250px] h-[300px] md:w-[300px] md:h-[350px] lg:w-[400px] lg:h-[450px] xl:w-[450px] xl:h-[500px]">
         <Image
           src={artist.imageUrl}

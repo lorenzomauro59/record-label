@@ -131,7 +131,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={loading}
-          className="px-4 py-2 w-40 bg-gray-800 disabled:bg-gray-400 disabled:text-gray-100 text-white font-medium"
+          className="px-4 py-2 w-40 bg-gray-800 disabled:bg-gray-400 disabled:text-gray-100 text-white font-medium mt-10"
         >
           Send
         </button>
