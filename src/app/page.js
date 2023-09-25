@@ -13,20 +13,20 @@ export default function Home() {
   const artists = [
     {
       name: "Daian Verna",
-      imageUrl: "/unnamed.jpg",
+      imageUrl: "/daian.png",
       description:
-        "Hailing from Charlone in Buenos Aires, Daian crafts pulsating rhythms that resonate with the urban heartbeat of his hometown. Marrying intricate synths with deep basslines, he has become a rising star, pushing the boundaries of techno with every track.",
+        "Driven by innate talent and a bold vision, Daian Verna embodies the future of techno music. His ability to experiment and craft immersive atmospheres perfectly aligns with Holobeat's mission to promote groundbreaking music. Daian not only captures the essence of modern techno but stands as a living testament to Holobeat's support for emerging artists.",
     },
     {
       name: "Lorenzo Mauro",
       imageUrl: "/unnamed2.jpg",
       description:
-        "Born in the vibrant city of Rosario, Santa Fe, Lorenzo is a techno maestro whose soundscapes transport listeners to otherworldly dimensions. With a knack for blending hypnotic beats with ethereal overtones, he's gained recognition as a pioneer in the Argentinian techno scene.",
+        "A trailblazer in the techno scene, Lorenzo Mauro harbors an unmatched passion for avant-garde music. His knack for blending innovative sounds with powerful rhythms has cemented him as one of Holobeat's crown jewels. With every production, Lorenzo showcases his commitment to creativity and excellence, echoing Holobeat's pioneering spirit.",
     },
   ];
 
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex min-h-screen flex-col items-center pt-24">
       <div>
         <AboutUs />
       </div>

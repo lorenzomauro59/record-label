@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
-export default function SplashScreen({ duration = 100 }) {
+export default function SplashScreen({ duration = 1000 }) {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {

@@ -36,7 +36,7 @@ html {
 #contact-us::before {
   content: "";
   display: block;
-  height: 3rem; 
+  height: 4rem; 
   margin-top: 3rem; 
   visibility: hidden;
 }

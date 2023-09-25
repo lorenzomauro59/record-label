@@ -47,8 +47,8 @@ module.exports = {
       animation: {
         slideIn: "slideInFromLeft 1s forwards",
         slideInDelayed: "slideInFromLeft 1s 0.5s forwards",
-        fadeInScale: "fadeInScaleUp 1.5s forwards",
-        slideInLeft: "slideInFromLeft 1.5s forwards",
+        fadeInScale: "fadeInScaleUp 4s forwards",
+        slideInLeft: "slideInFromLeft 2s forwards",
         slideInRight: "slideInFromRight 2s forwards",
       },
     },
