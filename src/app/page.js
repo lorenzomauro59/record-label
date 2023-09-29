@@ -3,6 +3,7 @@ import ArtistCard from "../components/ArtistCard";
 import AboutUs from "@/components/About";
 import ContactUs from "@/components/Contact";
 import GifContainer from "@/components/Gif";
+import Networks from "@/components/Networks";
 
 export default function Home() {
   const soundCloudEmbedCode = `
@@ -58,6 +59,9 @@ export default function Home() {
       </div>
       <div className="mt-10">
         <ContactUs />
+      </div>
+      <div className="mt-10">
+        <Networks />
       </div>
     </main>
   );

@@ -74,6 +74,15 @@ export default function Header() {
             Contact Us / Demo
           </Link>
         </li>
+        <li className="text-black hover:text-gray-400 text-l font-semibold leading-tight">
+          <Link
+            className="px-2 py-4 mr-4 block border-b border-gray-100 md:border-0 animate-slideInRight"
+            href="#our-networks"
+            onClick={closeMenu}
+          >
+            Our Networks
+          </Link>
+        </li>
       </ul>
     </nav>
   );
