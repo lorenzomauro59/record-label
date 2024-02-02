@@ -27,7 +27,7 @@ export default function Header() {
       }`}
     >
       <div className="flex items-center justify-between w-full md:w-auto">
-        <div className="px-2 py-2 m-3 text-black hover:text-gray-400 cursor-pointer transition-transform ease-in-out duration-300 transform hover:scale-110">
+        <div className="px-2 py-2 m-4 text-black hover:text-gray-400 cursor-pointer transition-transform ease-in-out duration-300 transform hover:scale-110">
           <Link href="/">
             <img
               src="/HolobeatLogo(web02).png"

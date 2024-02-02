@@ -12,11 +12,13 @@ function AboutUs() {
         </div>
         <div className="mb-36">
           <p className="text-center p-4 animate-fadeInScale">
-            We are a record label dedicated to promoting innovative music and of
-            Vanguard. Our commitment is to support emerging artists and bring
-            your music to audiences around the world. We believe in passion,
-            talent, and creativity, and we work every day to be a pillar in the
-            music industry.
+            Holobeat is a record label that merges the essence of techno music
+            with a forward-thinking mindset and a profound influence from
+            science fiction. Our approach revolves around limitless creativity,
+            technological innovation, and a futuristic aesthetic. We are
+            architects of unique sonic landscapes that defy conventions and
+            transport our listeners to unexplored musical worlds. At HoloBeat,
+            we craft the sound of tomorrow, today.
           </p>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function MusicPlayer({ embedCode, spotifyEmbedCode }) {
 
   return (
     <div className="bg-white w-screen">
-      <div id="our-music" className="flex justify-center pt-20">
+      <div id="our-music" className="flex justify-center pt-32">
         <h2 className="text-xl text-black font-semibold leading-tight">
           Our Music
         </h2>

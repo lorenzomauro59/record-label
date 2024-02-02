@@ -4,7 +4,7 @@ import { FaBandcamp, FaSoundcloud, FaInstagram } from "react-icons/fa";
 export default function Networks() {
   return (
     <>
-      <div id="our-networks" className="flex justify-center pt-20">
+      <div id="our-networks" className="flex justify-center pt-40">
         <h2 className="text-xl text-white font-semibold leading-tight">
           Our Networks
         </h2>
