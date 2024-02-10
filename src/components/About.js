@@ -17,7 +17,7 @@ function AboutUs() {
             science fiction. Our approach revolves around limitless creativity,
             technological innovation, and a futuristic aesthetic. We are
             architects of unique sonic landscapes that defy conventions and
-            transport our listeners to unexplored musical worlds. At HoloBeat,
+            transport our listeners to unexplored musical worlds. At Holobeat,
             we craft the sound of tomorrow, today.
           </p>
         </div>
