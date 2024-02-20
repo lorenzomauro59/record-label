@@ -25,7 +25,7 @@ function ArtistCard({ artist, animationClass }) {
         />
       </div>
       <div>
-        <p className="mt-2 max-w-full break-words relative w-[200px] md:w-[300px] lg:w-[400px] xl:w-[450px]">
+        <p className="mt-2 max-w-full break-words relative w-[250px] md:w-[300px] lg:w-[400px] xl:w-[450px]">
           {artist.description}
         </p>
       </div>

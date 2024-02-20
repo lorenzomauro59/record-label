@@ -6,8 +6,8 @@ import GifContainer from "@/components/Gif";
 import Networks from "@/components/Networks";
 
 export default function Home() {
-  const soundCloudEmbedCode = `
-  <iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=420316729/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/transparent=true/" seamless><a href="https://tnrmedia.bandcamp.com/album/peers">Peers de Lorenzo Mauro</a></iframe>`;
+  const beatportEmbedCode = `
+  <iframe style="border: 0; border-radius:12px; width: 350px; height: 470px;" src="https://embed.beatport.com/?id=4435373&type=release" seamless><a href="https://www.beatport.com/es/release/holo/4435373">HOLO</a></iframe>`;
 
   const SpotifyEmbedCode = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3Gb8VJ7tOfKQIohOcuh4bz?utm_source=generator&theme=0" width= "350px" height="468" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
 
@@ -16,13 +16,13 @@ export default function Home() {
       name: "Daian Verna",
       imageUrl: "/daian.png",
       description:
-        "Driven by innate talent and a bold vision, Daian Verna embodies the future of techno music. His ability to experiment and craft immersive atmospheres perfectly aligns with Holobeat's mission to promote groundbreaking music. Daian not only captures the essence of modern techno but stands as a living testament to Holobeat's support for emerging artists.",
+        "Daian Verna, aka XVRX, is an Argentine techno DJ and producer born in 1996. His music blends technology and dystopian themes, crafting immersive soundscapes that fuse techno with elements of minimalism, ambient, and experimentation. XVRX's style evokes a futuristic universe, marked by dark tones and atmospheric textures.",
     },
     {
       name: "Lorenzo Mauro",
       imageUrl: "/unnamed2.jpg",
       description:
-        "A trailblazer in the techno scene, Lorenzo Mauro harbors an unmatched passion for avant-garde music. His knack for blending innovative sounds with powerful rhythms has cemented him as one of Holobeat's crown jewels. With every production, Lorenzo showcases his commitment to creativity and excellence, echoing Holobeat's pioneering spirit.",
+        "Lorenzo Mauro, is a Rosario-based DJ and producer. Draws inspiration from minimal ambient and club techno music. He's carving out his artistic mark in the country's scene for years, releasing with prominent labels and actively contributing to the cultural landscape. Always creating sound horizons to explore.",
     },
   ];
 
@@ -32,7 +32,7 @@ export default function Home() {
         <AboutUs />
       </div>
       <MusicPlayer
-        embedCode={soundCloudEmbedCode}
+        embedCode={beatportEmbedCode}
         spotifyEmbedCode={SpotifyEmbedCode}
       />
       <div id="our-artists" className="mt-10">
