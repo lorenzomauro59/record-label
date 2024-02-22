@@ -8,14 +8,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Holobeat",
-  description: "Techno music record label",
+  description: "Techno music record label / Events",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html>
       <head>
-        <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
