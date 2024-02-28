@@ -9,7 +9,7 @@ export default function Home() {
   const beatportEmbedCode = `
   <iframe style="border: 0; border-radius:12px; width: 350px; height: 470px;" src="https://embed.beatport.com/?id=4435373&type=release" seamless><a href="https://www.beatport.com/es/release/holo/4435373">HOLO</a></iframe>`;
 
-  const SpotifyEmbedCode = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3Gb8VJ7tOfKQIohOcuh4bz?utm_source=generator&theme=0" width= "350px" height="468" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+  const SpotifyEmbedCode = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7pMdHEnD6jnHIJgteFXif3?utm_source=generator&theme=0" width="350px" height="468" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> `;
 
   const artists = [
     {
