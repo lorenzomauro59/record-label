@@ -28,6 +28,32 @@ export default function toPay() {
         </a>
       </div>
 
+      {/* Segundo botón */}
+      <div className="flex items-center justify-center mb-4 animate-slideInLeft">
+        <p className="text-sm mr-4">2 x $5000</p>
+        <a
+          href="https://mpago.la/1yDH1di"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="custom-mp-button ml-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Pagar
+        </a>
+      </div>
+
+      {/* Tercer botón */}
+      <div className="flex items-center justify-center mb-4 animate-slideInLeft">
+        <p className="text-sm mr-4 animate-slideInLeft">3 x $6000</p>
+        <a
+          href="https://mpago.la/1FqqwuD"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="custom-mp-button ml-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Pagar
+        </a>
+      </div>
+
       <div>
         <p className="text-sm p-6 text-center">
           Al realizar el pago, no olvides enviar el comprobante a nuestro{" "}
