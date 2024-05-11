@@ -23,11 +23,6 @@ export default function toPay() {
       <div className="flex items-center justify-center mb-4 animate-slideInLeft">
         <p className="text-sm mr-4">1 x $3000</p>
       </div>
-
-      {/* Segundo botón */}
-      <div className="flex items-center justify-center mb-4 animate-slideInLeft">
-        <p className="text-sm mr-4">Promo Limitada 3 x $7500</p>
-      </div>
       <div>
         <p className="text-sm p-6 text-center">
           SOLO x TRANSFERENCIA 📲 <br></br>ALIAS: holobeat
