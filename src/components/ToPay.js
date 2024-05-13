@@ -19,20 +19,6 @@ export default function toPay() {
           objectFit="cover"
         />
       </div>
-      {/* Primer botón */}
-      <div className="flex items-center justify-center mb-4 animate-slideInLeft">
-        <p className="text-sm mr-4">Anticipadas $3000</p>
-      </div>
-
-      {/* Segundo botón */}
-      <div className="flex items-center justify-center mb-4 animate-slideInLeft">
-        <p className="text-sm mr-4">Puerta $4000 🚪</p>
-      </div>
-      <div>
-        <p className="text-sm p-6 text-center">
-          Anticipadas SOLO x TRANSFERENCIA 📲 <br></br>ALIAS: holobeat
-        </p>
-      </div>
     </div>
   );
 }
