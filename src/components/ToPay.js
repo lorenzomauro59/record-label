@@ -8,17 +8,8 @@ export default function toPay() {
       style={{ backgroundImage: `url('/Background-Gif.gif')` }}
     >
       <h1 className="text-2xl font-bold mt-12 animate-slideInLeft">
-        Tickets Holobeat 11-05 (HUM)
+        No tickets available
       </h1>
-
-      <div className="animate-slideInLeft relative w-[200px] h-[200px] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] xl:w-[300px] xl:h-[300px] mb-8 mt-8">
-        <Image
-          src="/FLYERHB003.png"
-          alt="flyer"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
     </div>
   );
 }
