@@ -6,9 +6,9 @@ import GifContainer from "@/components/Gif";
 import Networks from "@/components/Networks";
 
 export default function Home() {
-  const beatportEmbedCode = `<iframe style="border-radius:12px" src="https://embed.beatport.com/?id=4673836&type=release" width="350" height="468" frameborder="0" scrolling="no" style="max-width:600px;"></iframe>`;
+  const beatportEmbedCode = `<iframe style="border-radius:12px" src="https://embed.beatport.com/?id=4712484&type=release" width="350" height="468" frameborder="0" scrolling="no" style="max-width:600px;"></iframe>`;
 
-  const SpotifyEmbedCode = `  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/60Jxh6eTzEUkeFx3GHkTuG?utm_source=generator" width="350px" height="468" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  const SpotifyEmbedCode = `  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3ubKpruT4LAfLTYtytkNvF?utm_source=generator&theme=0" width="350px" height="468" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   `;
 
   const artists = [
