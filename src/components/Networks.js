@@ -16,7 +16,7 @@ export default function Networks() {
           </Link>
         </li>
         <li className="m-8 md:m-12 lg:m-16">
-          <Link href="https://www.instagram.com/holobeatrec/">
+          <Link href="https://www.instagram.com/holobeat.rec/">
             <FaInstagram size={96} />
           </Link>
         </li>
