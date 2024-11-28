@@ -52,7 +52,7 @@ export default function Home() {
       name: "Juxøn",
       imageUrl: "/juve.jpeg",
       description:
-        "Juvxøn is a young techno producer and DJ from Rosario, Argentina, known for his hypnotic, minimalistic sound that explores the subconscious. His debut EP, Juvxøn, blends his previous style, Juve, with his current approach, reflecting a journey of personal balance. With a focus on 'Music and Spirituality', he aims to connect with listeners and inspire mental healing while continuing to evolve his sound.",
+        "Juxøn is a young techno producer and DJ from Rosario, Argentina, known for his hypnotic, minimalistic sound that explores the subconscious. His debut EP, Juvxøn, blends his previous style, Juve, with his current approach, reflecting a journey of personal balance. With a focus on 'Music and Spirituality', he aims to connect with listeners and inspire mental healing while continuing to evolve his sound.",
     },
   ];
 
