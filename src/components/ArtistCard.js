@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 
 function ArtistCard({ artist, animationClass }) {
@@ -15,15 +16,21 @@ function ArtistCard({ artist, animationClass }) {
         inView ? animationClass : ""
       }`}
     >
-      {/* Imagen */}
-      <div className="relative w-[250px] h-[300px] md:w-[300px] md:h-[350px] lg:w-[300px] lg:h-[350px] xl:w-[350px] xl:h-[350px]">
-        <Image
-          src={artist.imageUrl}
-          alt={artist.name}
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
+      {/* Imagen envuelta en un enlace */}
+      <Link
+        href={artist.instagramUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="relative w-[250px] h-[300px] md:w-[300px] md:h-[350px] lg:w-[300px] lg:h-[350px] xl:w-[350px] xl:h-[350px] cursor-pointer">
+          <Image
+            src={artist.imageUrl}
+            alt={artist.name}
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+      </Link>
 
       {/* Contenedor del Texto con Altura Responsiva */}
       <div className="mt-2 w-[250px] md:w-[300px] lg:w-[300px] xl:w-[350px]">
