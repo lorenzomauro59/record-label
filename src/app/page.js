@@ -31,7 +31,7 @@ export default function Home() {
       imageUrl: "/lenardo.jpeg",
       description:
         "Le Nardo, a Rosario-born artist now based in Miami, is known for his unique sound deeply rooted in minimalism. His passion for machines drives his creative process, crafting distinctive tracks that stand out in the electronic music scene. With an extensive career, Le Nardo has shared the stage with top artists such as Richie Hawtin, Charlotte de Witte, Joseph Capriati, and many others.",
-      instagramUrl: "https://instagram.com/lenardo___",
+      instagramUrl: "https://instagram.com/lenardo__",
     },
     {
       name: "Rodri & Jota",
