@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Holobeat",
-  description: "Techno music record label / Events",
+  description: "Techno Record Label",
 };
 
 export default function RootLayout({ children }) {

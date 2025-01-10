@@ -6,9 +6,9 @@ import GifContainer from "@/components/Gif";
 import Networks from "@/components/Networks";
 
 export default function Home() {
-  const beatportEmbedCode = `<iframe style="border-radius:12px" src="https://embed.beatport.com/?id=4805844&type=release" width="350" height="468" frameborder="0" scrolling="no" style="max-width:600px;"></iframe>`;
+  const beatportEmbedCode = `<iframe style="border-radius:12px" src="https://embed.beatport.com/?id=4848122&type=release" width="350" height="468" frameborder="0" scrolling="no" style="max-width:600px;"></iframe>`;
 
-  const SpotifyEmbedCode = `  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6vXMCWBaAlX9K3n9tgWGNg?utm_source=generator" width="350px" height="468" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  const SpotifyEmbedCode = `  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4nvsCCvW7v2msuoH7Zi0n4?utm_source=generator" width="350px" height="468" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   `;
 
   const artists = [
@@ -60,6 +60,13 @@ export default function Home() {
       description:
         "Juxøn is a young techno producer and DJ from Rosario, Argentina, known for his hypnotic, minimalistic sound that explores the subconscious. His debut EP, Juvxøn, blends his previous style, Juve, with his current approach, reflecting a journey of personal balance. With a focus on 'Music and Spirituality', he aims to connect with listeners and inspire mental healing while continuing to evolve his sound.",
       instagramUrl: "https://instagram.com/juxon._",
+    },
+    {
+      name: "Pørtal",
+      imageUrl: "/portal.png",
+      description:
+        "Pørtal is a Sicilian-born Dj and producer. At 21, he moved to Barcelona, drawn by the city’s vibrant electronic music culture. Here, he honed his craft, creating sets and productions that guide listeners on a mesmerizing journey through hypnotic sounds. ",
+      instagramUrl: "https://instagram.com/portal.looped",
     },
   ];
 
