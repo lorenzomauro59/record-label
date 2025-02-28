@@ -12,13 +12,13 @@ function AboutUs() {
         </div>
         <div className="mb-36">
           <p className="text-center p-4 animate-fadeInScale">
-            Holobeat is a record label that merges the essence of techno music
-            with a forward-thinking mindset and a profound influence from
-            science fiction. Our approach revolves around limitless creativity,
-            technological innovation, and a futuristic aesthetic. We are
-            architects of unique sonic landscapes that defy conventions and
-            transport our listeners to unexplored musical worlds. At Holobeat,
-            we craft the sound of tomorrow, today.
+            Holobeat is the convergence of technology and emotion, a record
+            label where electronic music transforms into a multisensory
+            experience. We fuse the intangible and futuristic essence of "Holo"
+            with the rhythmic energy of "Beat," creating a space where sound,
+            visuals, and innovation intertwine. More than just a label, we are a
+            platform for digital exploration and human connection through
+            techno, minimal, and sci-fi aesthetics.
           </p>
         </div>
       </div>
