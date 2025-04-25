@@ -6,9 +6,9 @@ import GifContainer from "@/components/Gif";
 import Networks from "@/components/Networks";
 
 export default function Home() {
-  const beatportEmbedCode = `<iframe style="border-radius:12px" src="https://embed.beatport.com/?id=4999661&type=release" width="350" height="468" frameborder="0" scrolling="no" style="max-width:600px;"></iframe>`;
+  const beatportEmbedCode = `<iframe style="border-radius:12px" src="https://embed.beatport.com/?id=5030820&type=release" width="350" height="468" frameborder="0" scrolling="no" style="max-width:600px;"></iframe>`;
 
-  const SpotifyEmbedCode = `  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/00YkrGfq0tkJAdCxq3fo0h?utm_source=generator" width="350px" height="468" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  const SpotifyEmbedCode = `  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2VKhR8MU4j88hZaDKzpgcw?utm_source=generator" width="350px" height="468" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   `;
 
   const artists = [
@@ -67,6 +67,13 @@ export default function Home() {
       description:
         "Pørtal is a Sicilian-born Dj and producer. At 21, he moved to Barcelona, drawn by the city’s vibrant electronic music culture. Here, he honed his craft, creating sets and productions that guide listeners on a mesmerizing journey through hypnotic sounds. ",
       instagramUrl: "https://instagram.com/portal.looped",
+    },
+    {
+      name: "MRDIE",
+      imageUrl: "/diego.png",
+      description:
+        "MRDIE is a seasoned electronic music producer with a deep love for machines and analog gear. With a long-standing career, he has released on the renowned Minus label and contributed significantly to the global techno culture. ",
+      instagramUrl: "https://instagram.com/dieferrey",
     },
   ];
 
