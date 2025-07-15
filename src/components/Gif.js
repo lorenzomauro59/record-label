@@ -5,11 +5,11 @@ import { useInView } from "react-intersection-observer";
 const GifContainer = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.01,
   });
 
   return (
-    <div className="flex justify-center items-center mt-10">
+    <div className="flex justify-center items-center mt-4">
       <img
         ref={ref}
         src="/HOLOBEAT[Giflogo03][BANNER].gif"

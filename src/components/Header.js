@@ -36,7 +36,7 @@ export default function Header() {
           <img
             src="/HolobeatLogo(web02).png"
             alt="Holobeat Logo"
-            className="h-10 w-auto"
+            className="h-14 w-auto"
           />
         </Link>
 
@@ -44,7 +44,7 @@ export default function Header() {
           className="md:hidden focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <FaBars size={22} color="black" />
+          <FaBars size={24} color="black" />
         </button>
 
         <ul className="hidden md:flex space-x-10">
@@ -69,7 +69,7 @@ export default function Header() {
               <Link
                 href={href}
                 onClick={closeMenu}
-                className="block text-black text-sm font-medium tracking-wide hover:text-gray-500 transition-colors"
+                className="block text-black text-m font-medium tracking-wide hover:text-gray-500 transition-colors"
               >
                 {label}
               </Link>

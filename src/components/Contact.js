@@ -7,142 +7,134 @@ export default function ContactForm() {
   const [loading, setLoading] = useState(false);
   const [showInput, setShowInput] = useState(false);
 
-  const handleCheckboxChange = () => {
-    setShowInput(!showInput);
-  };
+  const handleCheckboxChange = () => setShowInput(!showInput);
 
   async function handleSubmit(event) {
     event.preventDefault();
     setLoading(true);
 
     const data = {
-      name: String(event.target.name.value),
-      email: String(event.target.email.value),
-      message: String(event.target.message.value),
+      name: event.target.name.value,
+      email: event.target.email.value,
+      message: event.target.message.value,
     };
 
     if (showInput) {
-      data.soundcloudLink = String(event.target.soundcloudLink.value);
+      data.soundcloudLink = event.target.soundcloudLink.value;
     }
 
     const response = await fetch("/api/contact", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
 
     if (response.ok) {
-      event.target.name.value = "";
-      event.target.email.value = "";
-      event.target.message.value = "";
-      if (showInput) event.target.soundcloudLink.value = "";
-      toast("Message sent succesfully!", {
-        icon: "👏",
-      });
-    }
-    if (!response.ok) {
+      event.target.reset();
+      toast("Message sent succesfully!", { icon: "👏" });
+    } else {
       setLoading(false);
-      toast("An error occurred while sending the message.", {
-        icon: "❌",
-      });
+      toast("An error occurred while sending the message.", { icon: "❌" });
     }
   }
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <h2 className="text-center text-3xl md:text-5xl font-semibold tracking-wide leading-tight animate-fadeInScale mb-16">
+      <div className="w-full max-w-3xl px-10 mx-auto">
+        <h2 className="text-center text-3xl md:text-5xl font-semibold tracking-wide leading-tight animate-fadeInScale mb-16 text-white">
           Contact Us
         </h2>
-        <div className="md:flex">
-          <div className="w-full md:w-1/2 flex flex-col my-4 md:mr-2">
-            <label className="font-bold text-white" htmlFor="name">
-              Name
-            </label>
-            <input
-              type="text"
-              minLength={3}
-              maxLength={150}
-              required
-              className="p-4 bg-gray-50 border border-gray-100 text-black"
-              autoComplete="off"
-              id="name"
-              placeholder="Name"
-            />
-          </div>
-          <div className="w-full md:w-1/2 flex flex-col my-4 md:ml-2">
-            <label className="font-bold text-white" htmlFor="email">
-              Email
-            </label>
-            <input
-              type="email"
-              minLength={5}
-              maxLength={150}
-              required
-              className="p-4 bg-gray-50 border border-gray-100 text-black"
-              autoComplete="off"
-              id="email"
-              placeholder="Email"
-            />
-          </div>
-        </div>
 
-        <div className="w-full flex flex my-4">
-          <label className="font-bold text-white mr-4" htmlFor="demoSubmission">
-            <input
-              className="mr-1"
-              type="checkbox"
-              id="demoSubmission"
-              onChange={handleCheckboxChange}
-            />
-            Demo Submission
-          </label>
-          <label className="font-bold text-white" htmlFor="inquiries">
-            <input className="mr-1" type="checkbox" id="inquiries" />
-            Inquiries
-          </label>
-        </div>
+        <form onSubmit={handleSubmit}>
+          <div className="md:flex">
+            <div className="w-full md:w-1/2 flex flex-col my-4 md:mr-2">
+              <label className="font-bold text-white" htmlFor="name">
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                minLength={3}
+                maxLength={150}
+                required
+                className="p-4 bg-gray-50 border border-gray-100 text-black"
+                placeholder="Name"
+              />
+            </div>
+            <div className="w-full md:w-1/2 flex flex-col my-4 md:ml-2">
+              <label className="font-bold text-white" htmlFor="email">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                minLength={5}
+                maxLength={150}
+                required
+                className="p-4 bg-gray-50 border border-gray-100 text-black"
+                placeholder="Email"
+              />
+            </div>
+          </div>
 
-        {showInput && (
-          <div className="w-full flex flex-col my-4">
-            <label className="font-bold text-white" htmlFor="soundcloudLink">
-              Soundcloud Private Link
+          <div className="flex flex-wrap my-4 space-x-6">
+            <label className="font-bold text-white flex items-center">
+              <input
+                type="checkbox"
+                id="demoSubmission"
+                onChange={handleCheckboxChange}
+                className="mr-2"
+              />
+              Demo Submission
             </label>
-            <input
-              type="text"
+            <label className="font-bold text-white flex items-center">
+              <input type="checkbox" id="inquiries" className="mr-2" />
+              Inquiries
+            </label>
+          </div>
+
+          {showInput && (
+            <div className="flex flex-col my-4">
+              <label className="font-bold text-white" htmlFor="soundcloudLink">
+                Soundcloud Private Link
+              </label>
+              <input
+                type="text"
+                id="soundcloudLink"
+                required
+                className="p-4 bg-gray-50 border border-gray-100 text-black"
+                placeholder="Soundcloud Link"
+              />
+            </div>
+          )}
+
+          <div className="my-4">
+            <label className="font-bold text-white" htmlFor="message">
+              Message
+            </label>
+            <textarea
+              id="message"
+              rows={4}
+              minLength={10}
+              maxLength={500}
               required
-              id="soundcloudLink"
-              className="p-4 bg-gray-50 border border-gray-100 text-black"
-              placeholder="Soundcloud Link"
+              className="w-full p-4 bg-gray-50 border border-gray-100 text-black"
+              placeholder="Write your message..."
             />
           </div>
-        )}
-        <div>
-          <label className="font-bold text-white" htmlFor="message">
-            Message
-          </label>
-          <textarea
-            rows={4}
-            required
-            minLength={10}
-            maxLength={500}
-            id="message"
-            className="w-full p-4 bg-gray-50 border border-gray-100 text-black"
-            placeholder="Write your message..."
-          />
-        </div>
-        <div className="flex justify-center items-center mt-4">
-          <button
-            type="submit"
-            disabled={loading}
-            className="px-4 py-2 w-40 bg-gray-800 disabled:bg-gray-400 disabled:text-gray-100 text-white font-medium mt-10"
-          >
-            Send
-          </button>
-        </div>
-      </form>
+
+          <div className="flex justify-center mt-10">
+            <button
+              type="submit"
+              disabled={loading}
+              className="px-4 py-2 w-40 bg-gray-800 text-white font-medium disabled:bg-gray-400 disabled:text-gray-100"
+            >
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+
       <Toaster position="top-right" reverseOrder={false} />
     </>
   );

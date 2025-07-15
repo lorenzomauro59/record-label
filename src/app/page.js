@@ -7,21 +7,18 @@ import Networks from "@/components/Networks";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex flex-col">
       <div>
         <AboutUs />
       </div>
       <MusicPlayer />
-      <div className="flex flex-col flex-wrap md:flex-row justify-center items-center mt-20">
+      <div className="flex flex-col flex-wrap md:flex-row justify-center items-center">
         <ArtistCard />
       </div>
-      <div>
-        <GifContainer />
-      </div>
-      <div className="mt-10" id="contact-us">
+      <div id="contact-us">
         <ContactUs />
       </div>
-      <div className="mt-10">
+      <div className="mt-20">
         <Networks />
       </div>
     </main>
