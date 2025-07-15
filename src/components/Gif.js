@@ -13,9 +13,9 @@ const GifContainer = () => {
       <img
         ref={ref}
         src="/HOLOBEAT[Giflogo03][BANNER].gif"
-        alt="HoloBeat Banner"
+        alt="Holobeat Banner"
         className={`w-3/4 ${
-          inView ? "animate-fadeInScale" : "transform scale-0.7 opacity-1"
+          inView ? "animate-fadeInScale" : "transform scale-0.8 opacity-1"
         }`}
       />
     </div>

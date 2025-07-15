@@ -1,111 +1,90 @@
 "use client";
 
-import { FaBars } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import { FaBars } from "react-icons/fa";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [showHeader, setShowHeader] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoaded(true);
-    }, 1000);
+      setShowHeader(true);
+    }, 900); // ⏱ tiempo en milisegundos
 
     return () => clearTimeout(timer);
   }, []);
 
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
+  const closeMenu = () => setIsOpen(false);
+
+  if (!showHeader) return null; // no renderiza hasta que showHeader sea true
 
   return (
-    <nav
-      className={`bg-white fixed top-0 w-full flex flex-col md:flex-row justify-between items-center z-50 transition-opacity duration-1000 ${
-        isLoaded ? "opacity-100" : "opacity-0"
-      }`}
+    <motion.nav
+      initial={{ y: -60, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="fixed top-0 w-full bg-white z-50 shadow-sm"
     >
-      <div className="flex items-center justify-between w-full md:w-auto">
-        <div className="px-2 py-2 m-4 text-black hover:text-gray-400 cursor-pointer transition-transform ease-in-out duration-300 transform hover:scale-110">
-          <Link href="/">
-            <img
-              src="/HolobeatLogo(web02).png"
-              alt="Holobeat-Logo"
-              className="w-15 h-12 animate-slideInLeft"
-            />
-          </Link>
-        </div>
+      <div className="flex items-center justify-between px-4 md:px-8 py-3">
+        <Link
+          href="/"
+          className="flex items-center transition-transform hover:scale-105"
+        >
+          <img
+            src="/HolobeatLogo(web02).png"
+            alt="Holobeat Logo"
+            className="h-10 w-auto"
+          />
+        </Link>
 
-        <div
-          className="px-2 py-4 m-3 animate-slideInRight md:hidden px-2 py-1 cursor-pointer transition-transform ease-in-out duration-300 transform hover:scale-110"
+        <button
+          className="md:hidden focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <FaBars size={24} color="black" />
-        </div>
+          <FaBars size={22} color="black" />
+        </button>
+
+        <ul className="hidden md:flex space-x-10">
+          {navLinks.map(({ href, label }) => (
+            <li key={href}>
+              <Link
+                href={href}
+                onClick={closeMenu}
+                className="text-black text-sm md:text-base font-medium tracking-wide hover:text-gray-500 transition-colors"
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul
-        className={`${
-          isOpen
-            ? "flex flex-col space-y-2 md:space-x-2 w-full md:w-auto"
-            : "hidden md:flex md:space-x-16"
-        }`}
-      >
-        <li className="text-black hover:text-gray-400">
-          <Link
-            className="px-2 py-4 block border-b border-gray-100 md:border-0 text-l font-semibold leading-tight animate-slideInRight"
-            href="#about-us"
-            onClick={closeMenu}
-          >
-            About Us
-          </Link>
-        </li>
-        <li className="text-black hover:text-gray-400 text-l font-semibold leading-tight">
-          <Link
-            className="px-2 py-4 block border-b border-gray-100 md:border-0 animate-slideInRight"
-            href="#our-music"
-            onClick={closeMenu}
-          >
-            Our Music
-          </Link>
-        </li>
-        <li className="text-black hover:text-gray-400 text-l font-semibold leading-tight">
-          <Link
-            className="px-2 py-4 block border-b border-gray-100 md:border-0 animate-slideInRight"
-            href="#our-artists"
-            onClick={closeMenu}
-          >
-            Our Artists
-          </Link>
-        </li>
-        <li className="text-black hover:text-gray-400 text-l font-semibold leading-tight">
-          <Link
-            className="px-2 py-4 mr-4 block border-b border-gray-100 md:border-0 animate-slideInRight"
-            href="#contact-us"
-            onClick={closeMenu}
-          >
-            Contact Us / Demo
-          </Link>
-        </li>
-        <li className="text-black hover:text-gray-400 text-l font-semibold leading-tight">
-          <Link
-            className="px-2 py-4 mr-4 block border-b border-gray-100 md:border-0 animate-slideInRight"
-            href="#our-networks"
-            onClick={closeMenu}
-          >
-            Our Networks
-          </Link>
-        </li>
-        <li className="text-black hover:text-gray-400 text-l font-semibold leading-tight">
-          <Link
-            className="px-2 py-4 mr-4 block border-b border-gray-100 md:border-0 animate-slideInRight"
-            href="/tickets"
-            onClick={closeMenu}
-          >
-            Tickets
-          </Link>
-        </li>
-      </ul>
-    </nav>
+
+      {isOpen && (
+        <ul className="flex flex-col items-start bg-white px-4 py-2 md:hidden">
+          {navLinks.map(({ href, label }) => (
+            <li key={href} className="w-full py-2 border-b border-gray-100">
+              <Link
+                href={href}
+                onClick={closeMenu}
+                className="block text-black text-sm font-medium tracking-wide hover:text-gray-500 transition-colors"
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </motion.nav>
   );
 }
+
+const navLinks = [
+  { href: "#about-us", label: "About Us" },
+  { href: "#our-music", label: "Our Music" },
+  { href: "#our-artists", label: "Our Artists" },
+  { href: "#contact-us", label: "Contact Us / Demo" },
+  { href: "#our-networks", label: "Our Networks" },
+];

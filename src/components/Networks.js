@@ -4,8 +4,8 @@ import { FaSoundcloud, FaInstagram } from "react-icons/fa";
 export default function Networks() {
   return (
     <>
-      <div id="our-networks" className="flex justify-center pt-40">
-        <h2 className="text-xl text-white font-semibold leading-tight">
+      <div id="our-networks" className="flex justify-center pt-20">
+        <h2 className="text-center text-3xl md:text-5xl font-semibold tracking-wide leading-tight animate-fadeInScale">
           Our Networks
         </h2>
       </div>

@@ -53,6 +53,9 @@ export default function ContactForm() {
   return (
     <>
       <form onSubmit={handleSubmit}>
+        <h2 className="text-center text-3xl md:text-5xl font-semibold tracking-wide leading-tight animate-fadeInScale mb-16">
+          Contact Us
+        </h2>
         <div className="md:flex">
           <div className="w-full md:w-1/2 flex flex-col my-4 md:mr-2">
             <label className="font-bold text-white" htmlFor="name">
