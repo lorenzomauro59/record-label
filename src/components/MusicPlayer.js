@@ -8,9 +8,9 @@ export default function MusicPlayer() {
     threshold: 0.1,
   });
 
-  const beatportEmbedCode = `<iframe style="border-radius:12px" src="https://embed.beatport.com/?id=5138642&type=release" width="100%" height="352" frameborder="0" scrolling="no"></iframe>`;
+  const beatportEmbedCode = `<iframe style="border-radius:12px" src="https://embed.beatport.com/?id=5173566&type=release" width="100%" height="352" frameborder="0" scrolling="no"></iframe>`;
 
-  const spotifyEmbedCode = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/22iV4I25ObzF95FRA0Qx0E?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+  const spotifyEmbedCode = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1H6g8lt2edrtDTGahZaYDR?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
 
   return (
     <section id="our-music" className="w-full bg-white pb-20 px-4">
