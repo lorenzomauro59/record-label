@@ -128,6 +128,13 @@ export default function Artists() {
         "MRDIE is a seasoned electronic music producer with a deep love for machines and analog gear. With a long-standing career, he has released on the renowned Minus label and contributed significantly to the global techno culture. ",
       instagramUrl: "https://instagram.com/dieferrey",
     },
+    {
+      name: "Rekall.ar",
+      imageUrl: "/rekall.jpeg",
+      description:
+        "Rekall.ar is an Argentine producer focused on hypnotic and minimal techno. His sound combines deep textures, hypnotic rhythms, and immersive atmospheres, with a focus on the dance floor and an underground aesthetic.",
+      instagramUrl: "https://instagram.com/rekall.ar",
+    },
   ];
 
   return (
