@@ -101,7 +101,7 @@ export default function Artists() {
       instagramUrl: "https://instagram.com/murdott",
     },
     {
-      name: "Ugly & Dirty",
+      name: "UGLYANDDIRTY",
       imageUrl: "/ugly2.jpeg",
       description:
         "Santino is an emerging musician/producer from Buenos Aires, Argentina. In  2017, he began his journey into the world of music, focusing on blending genres such as minimal and techno. He has established himself as a distinctive artist within local rave scenes, delivering a unique and evolving sound at each performance. His aka reflects his perception of Techno Music, identifying it as 'Ugly and Dirty'.",
