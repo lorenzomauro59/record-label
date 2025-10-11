@@ -43,16 +43,16 @@ export default function AboutUs() {
       {/* Contenido */}
       <div className="relative z-20 max-w-3xl px-6 text-white text-center flex flex-col gap-8">
         <h2 className="text-3xl md:text-5xl font-semibold tracking-wide leading-tight animate-fadeInScale mt-4">
-          About Us
+          Sobre Nosotros
         </h2>
         <p className="mt-4 text-white text-base md:text-lg font-normal leading-relaxed md:leading-loose backdrop-blur-sm bg-black/30 px-4 py-2 rounded-md animate-fadeInScale delay-200">
-          Holobeat is the convergence of technology and emotion — a record label
-          where electronic music transforms into a multisensory experience. We
-          blend the intangible and futuristic essence of “Holo” with the
-          rhythmic energy of “Beat”, creating a space where sound, visuals, and
-          innovation intertwine. More than a label, we are a platform for
-          digital exploration and human connection through techno, minimal and
-          sci-fi aesthetics.
+          Holobeat es la fusión entre tecnología y emoción — un sello
+          discográfico donde la música electrónica se transforma en una
+          experiencia multisensorial. Combinamos la esencia intangible y
+          futurista de “Holo” con la energía rítmica de “Beat”, creando un
+          espacio donde el sonido, lo visual y la innovación se entrelazan. Más
+          que un sello, somos una plataforma de exploración digital y conexión
+          humana a través del techno, el minimal y la estética sci-fi.
         </p>
       </div>
     </section>

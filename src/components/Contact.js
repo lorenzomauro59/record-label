@@ -42,14 +42,14 @@ export default function ContactForm() {
     <>
       <div className="w-full max-w-3xl px-10 mx-auto">
         <h2 className="text-center text-3xl md:text-5xl font-semibold tracking-wide leading-tight animate-fadeInScale mb-16 text-white">
-          Contact Us
+          Contacto / Demo
         </h2>
 
         <form onSubmit={handleSubmit}>
           <div className="md:flex">
             <div className="w-full md:w-1/2 flex flex-col my-4 md:mr-2">
               <label className="font-bold text-white" htmlFor="name">
-                Name
+                Nombre
               </label>
               <input
                 type="text"
@@ -85,11 +85,11 @@ export default function ContactForm() {
                 onChange={handleCheckboxChange}
                 className="mr-2"
               />
-              Demo Submission
+              Demo Link
             </label>
             <label className="font-bold text-white flex items-center">
               <input type="checkbox" id="inquiries" className="mr-2" />
-              Inquiries
+              Consultas
             </label>
           </div>
 

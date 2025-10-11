@@ -54,11 +54,15 @@ function ArtistCard({ artist }) {
           />
         </motion.div>
       </Link>
-      <div className="mt-4 max-w-[350px]">
-        <p className="text-sm text-white leading-relaxed">
-          {artist.description}
-        </p>
-      </div>
+
+      {/* Nombre del artista */}
+      <h3 className="mt-4 text-lg font-semibold text-white tracking-wide">
+        {artist.name}
+      </h3>
+
+      <p className="mt-2 text-sm text-white/80 leading-relaxed max-w-[350px]">
+        {artist.description}
+      </p>
     </motion.div>
   );
 }
@@ -69,71 +73,78 @@ export default function Artists() {
       name: "Daian Verna",
       imageUrl: "/daian.jpg",
       description:
-        "Daian Verna, is an Argentine techno DJ and producer born in 1996. His music blends technology and dystopian themes, crafting immersive soundscapes that fuse techno with elements of minimalism, ambient, and experimentation. Daian's style evokes a futuristic universe, marked by dark tones and atmospheric textures. Also known as XVRX is responsible for shaping the visual identity of Holobeat and other creative projects.",
+        "Daian Verna es un DJ y productor de techno argentino nacido en 1996. Su música combina tecnología y temas distópicos, creando paisajes sonoros inmersivos que fusionan techno con elementos del minimalismo, ambient y experimentación. Su estilo evoca un universo futurista, marcado por tonos oscuros y texturas atmosféricas. También conocido como XVRX, es responsable de dar forma a la identidad visual de Holobeat y otros proyectos creativos.",
       instagramUrl: "https://instagram.com/daianvr",
     },
     {
       name: "Lorenzo Mauro",
       imageUrl: "/loren.png",
       description:
-        "Lorenzo Mauro, is a Rosario-based DJ and producer. Draws inspiration from minimal ambient and club techno music. He's carving out his artistic mark in the country's scene for years, releasing with prominent labels and actively contributing to the cultural landscape. Always creating sound horizons to explore.",
+        "Lorenzo Mauro es un DJ y productor nacido en Rosario, Argentina. Se inspira en el minimal ambient y el techno de club. Viene dejando su huella artística en la escena del país desde hace años, lanzando con sellos destacados y contribuyendo activamente al panorama cultural. Siempre creando nuevos horizontes sonoros por explorar.",
       instagramUrl: "https://instagram.com/lorenzomaurox",
     },
     {
       name: "Le Nardo",
       imageUrl: "/lenardo.jpeg",
       description:
-        "Le Nardo, a Rosario-born artist now based in Miami, is known for his unique sound deeply rooted in minimalism. His passion for machines drives his creative process, crafting distinctive tracks that stand out in the electronic music scene. With an extensive career, Le Nardo has shared the stage with top artists such as Richie Hawtin, Charlotte de Witte, Joseph Capriati, and many others.",
+        "Le Nardo, artista nacido en Rosario y actualmente radicado en Miami, es conocido por su sonido único profundamente arraigado en el minimalismo. Su pasión por las máquinas impulsa su proceso creativo, dando forma a tracks distintivos que sobresalen en la escena electrónica. Con una extensa trayectoria, Le Nardo ha compartido escenario con artistas como Richie Hawtin, Charlotte de Witte, Joseph Capriati, entre muchos otros.",
       instagramUrl: "https://instagram.com/lenardo__",
     },
     {
       name: "Rodri & Jota",
       imageUrl: "/rodrijota.png",
       description:
-        "Rodri & Jota are a distinguished artist duo known for their signature sound that seamlessly blends techno and house. Their music resonates within the rave scene of Rosario, marking their years of experimentation and innovation in the electronic music world. In addition to their musical contributions, they are also renowned tattoo artists in the city, bringing their creative skills to both music and visual art.",
+        "Rodri & Jota son un dúo de artistas reconocidos por su sonido característico que fusiona de manera fluida el techno y el house. Su música resuena en la escena rave de Rosario, marcando sus años de experimentación e innovación dentro del mundo electrónico. Además de su aporte musical, también son reconocidos tatuadores en la ciudad, llevando su creatividad tanto a la música como al arte visual.",
       instagramUrl: "https://instagram.com/rodri__jota",
     },
     {
       name: "Murdott",
       imageUrl: "/murdott2.jpg",
       description:
-        "Murdott, a DJ and techno producer, is known for his deep, atmospheric, and melancholic sound, which has earned him a spot in the underground scene. His tracks have been played by artists such as Lindsey Herbert, Cia Rebeck, and Josefina Muñoz. Currently, he continues to evolve, culturally and artistically committed to the audiovisual project 'Erosion Frequency'.",
+        "Murdott es un DJ y productor de techno reconocido por su sonido profundo, atmosférico y melancólico, que le ha valido un lugar en la escena underground. Sus tracks fueron apoyados por artistas como Lindsey Herbert, Cia Rebeck y Josefina Muñoz. Actualmente continúa evolucionando, comprometido cultural y artísticamente con el proyecto audiovisual 'Erosion Frequency'.",
       instagramUrl: "https://instagram.com/murdott",
     },
     {
       name: "UGLYANDDIRTY",
       imageUrl: "/ugly2.jpeg",
       description:
-        "Santino is an emerging musician/producer from Buenos Aires, Argentina. In  2017, he began his journey into the world of music, focusing on blending genres such as minimal and techno. He has established himself as a distinctive artist within local rave scenes, delivering a unique and evolving sound at each performance. His aka reflects his perception of Techno Music, identifying it as 'Ugly and Dirty'.",
+        "Santino es un músico y productor emergente de Buenos Aires, Argentina. En 2017 comenzó su camino en el mundo de la música, enfocándose en la fusión de géneros como el minimal y el techno. Se ha consolidado como un artista distintivo dentro de las escenas rave locales, ofreciendo un sonido único y en constante evolución en cada presentación. Su aka refleja su percepción del techno, identificándolo como 'Ugly and Dirty'.",
       instagramUrl: "https://instagram.com/_uglyanddirty",
     },
     {
       name: "Juxøn",
       imageUrl: "/juve.jpeg",
       description:
-        "Juxøn is a young techno producer and DJ from Rosario, Argentina, known for his hypnotic, minimalistic sound that explores the subconscious. His debut EP, Juvxøn, blends his previous style, Juve, with his current approach, reflecting a journey of personal balance. With a focus on 'Music and Spirituality', he aims to connect with listeners and inspire mental healing while continuing to evolve his sound.",
+        "Juxøn es un joven productor y DJ de techno de Rosario, Argentina, conocido por su sonido hipnótico y minimalista que explora el subconsciente. Su EP debut, 'Juvxøn', fusiona su estilo anterior, Juve, con su enfoque actual, reflejando un viaje hacia el equilibrio personal. Con un enfoque en 'Música y Espiritualidad', busca conectar con los oyentes e inspirar sanación mental mientras continúa evolucionando su sonido.",
       instagramUrl: "https://instagram.com/juxon._",
     },
     {
       name: "Pørtal",
       imageUrl: "/portal.png",
       description:
-        "Pørtal is a Sicilian-born Dj and producer. At 21, he moved to Barcelona, drawn by the city’s vibrant electronic music culture. Here, he honed his craft, creating sets and productions that guide listeners on a mesmerizing journey through hypnotic sounds. ",
+        "Pørtal es un DJ y productor nacido en Sicilia. A los 21 años se mudó a Barcelona, atraído por la vibrante cultura electrónica de la ciudad. Allí perfeccionó su arte, creando sets y producciones que guían al oyente en un viaje hipnótico a través del sonido.",
       instagramUrl: "https://instagram.com/portal.looped",
     },
     {
       name: "MRDIE",
       imageUrl: "/diego.png",
       description:
-        "MRDIE is a seasoned electronic music producer with a deep love for machines and analog gear. With a long-standing career, he has released on the renowned Minus label and contributed significantly to the global techno culture. ",
+        "MRDIE es un productor de música electrónica con una profunda pasión por las máquinas y el equipo analógico. Con una extensa carrera, ha lanzado música en el reconocido sello Minus y ha contribuido significativamente a la cultura techno a nivel global.",
       instagramUrl: "https://instagram.com/dieferrey",
     },
     {
       name: "Rekall.ar",
       imageUrl: "/rekall.jpeg",
       description:
-        "Rekall.ar is an Argentine producer focused on hypnotic and minimal techno. His sound combines deep textures, hypnotic rhythms, and immersive atmospheres, with a focus on the dance floor and an underground aesthetic.",
+        "Rekall.ar es un productor argentino enfocado en el techno hipnótico y minimalista. Su sonido combina texturas profundas, ritmos hipnóticos y atmósferas envolventes, con un enfoque en la pista de baile y una estética underground.",
       instagramUrl: "https://instagram.com/rekall.ar",
+    },
+    {
+      name: "Zetta JCG",
+      imageUrl: "/zetta.jpeg",
+      description:
+        "Zetta es un DJ y productor de Rosario, Santa Fe, Argentina, cuyo sonido se define por un techno hipnótico, mental y oscuro. Con líneas de bajo grooveras, texturas profundas y un toque agresivo, su música transforma la pista en un espacio de inmersión total.",
+      instagramUrl: "https://instagram.com/zetta.jcg",
     },
   ];
 
@@ -146,7 +157,7 @@ export default function Artists() {
         viewport={{ once: true }}
         className="text-center text-3xl md:text-5xl font-semibold tracking-wide leading-tight mb-16"
       >
-        Our Artists
+        Artistas
       </motion.h2>
 
       <motion.div

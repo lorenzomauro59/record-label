@@ -82,9 +82,9 @@ export default function Header() {
 }
 
 const navLinks = [
-  { href: "#about-us", label: "About Us" },
-  { href: "#our-music", label: "Our Music" },
-  { href: "#our-artists", label: "Our Artists" },
-  { href: "#contact-us", label: "Contact Us / Demo" },
-  { href: "#our-networks", label: "Our Networks" },
+  { href: "#about-us", label: "Sobre Nosotros" },
+  { href: "#our-music", label: "Música" },
+  { href: "#our-artists", label: "Artistas" },
+  { href: "#contact-us", label: "Contacto / Demo" },
+  { href: "#our-networks", label: "Redes Sociales" },
 ];

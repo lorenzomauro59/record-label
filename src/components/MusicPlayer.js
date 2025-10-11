@@ -8,15 +8,15 @@ export default function MusicPlayer() {
     threshold: 0.1,
   });
 
-  const beatportEmbedCode = `<iframe style="border-radius:12px" src="https://embed.beatport.com/?id=5316523&type=release" width="100%" height="352" frameborder="0" scrolling="no"></iframe>`;
+  const beatportEmbedCode = `<iframe style="border-radius:12px" src="https://embed.beatport.com/?id=5397813&type=release" width="100%" height="352" frameborder="0" scrolling="no"></iframe>`;
 
-  const spotifyEmbedCode = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/44xPLMeSicUYrVH7jCUgAK?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+  const spotifyEmbedCode = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2kOIZRmr8XIJ8biUIVKRdX?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
 
   return (
     <section id="our-music" className="w-full bg-white pb-20 px-4">
       <div className="mb-16 text-center">
         <h2 className="text-black text-3xl md:text-5xl font-semibold tracking-wide leading-tight animate-fadeInScale">
-          Our Music
+          Música
         </h2>
       </div>
       <div
