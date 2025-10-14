@@ -42,7 +42,7 @@ export default function ContactForm() {
     <>
       <div className="w-full max-w-3xl px-10 mx-auto">
         <h2 className="text-center text-3xl md:text-5xl font-semibold tracking-wide leading-tight animate-fadeInScale mb-16 text-white">
-          Contacto / Demo
+          Contacto / Demo.
         </h2>
 
         <form onSubmit={handleSubmit}>

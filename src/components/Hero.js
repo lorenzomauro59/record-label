@@ -42,9 +42,7 @@ export default function AboutUs() {
 
       {/* Contenido */}
       <div className="relative z-20 max-w-3xl px-6 text-white text-center flex flex-col gap-8">
-        <h2 className="text-3xl md:text-5xl font-semibold tracking-wide leading-tight animate-fadeInScale mt-4">
-          Sobre Nosotros
-        </h2>
+        <h2 className="text-3xl md:text-5xl font-semibold tracking-wide leading-tight animate-fadeInScale mt-4"></h2>
         <p className="mt-4 text-white text-base md:text-lg font-normal leading-relaxed md:leading-loose backdrop-blur-sm bg-black/30 px-4 py-2 rounded-md animate-fadeInScale delay-200">
           Holobeat es la fusión entre tecnología y emoción — un sello
           discográfico donde la música electrónica se transforma en una

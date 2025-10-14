@@ -157,7 +157,7 @@ export default function Artists() {
         viewport={{ once: true }}
         className="text-center text-3xl md:text-5xl font-semibold tracking-wide leading-tight mb-16"
       >
-        Artistas
+        Artistas.
       </motion.h2>
 
       <motion.div

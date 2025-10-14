@@ -7,7 +7,7 @@ export default function Networks() {
     <section className="w-full bg-black text-white py-12">
       <div id="our-networks" className="flex justify-center w-full">
         <h2 className="text-center text-3xl md:text-5xl font-semibold tracking-wide leading-tight animate-fadeInScale">
-          Redes Sociales
+          Redes.
         </h2>
       </div>
 

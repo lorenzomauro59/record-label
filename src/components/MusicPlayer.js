@@ -16,7 +16,7 @@ export default function MusicPlayer() {
     <section id="our-music" className="w-full bg-white pb-20 px-4">
       <div className="mb-16 text-center">
         <h2 className="text-black text-3xl md:text-5xl font-semibold tracking-wide leading-tight animate-fadeInScale">
-          Música
+          Música.
         </h2>
       </div>
       <div
