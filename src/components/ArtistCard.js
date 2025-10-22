@@ -146,6 +146,13 @@ export default function Artists() {
         "Zetta es un DJ y productor de Rosario, Santa Fe, Argentina, cuyo sonido se define por un techno hipnótico, mental y oscuro. Con líneas de bajo grooveras, texturas profundas y un toque agresivo, su música transforma la pista en un espacio de inmersión total.",
       instagramUrl: "https://instagram.com/zetta.jcg",
     },
+    {
+      name: "Sec Tøm",
+      imageUrl: "/sec-tom.jpg",
+      description:
+        "Sec Tøm es un proyecto groove que navega entre lo raw, el minimal y el minimal moderno, con un solo objetivo: provocar movimiento. Su sonido combina lo hipnótico y lo analógico , sin dejar atrás lo digital, que generan un viaje de pura tensión y energía. El futuro aún incierto, pero en mis manos.",
+      instagramUrl: "https://instagram.com/sectom.ghf",
+    },
   ];
 
   return (
