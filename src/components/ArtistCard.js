@@ -174,7 +174,7 @@ export default function Artists() {
         viewport={{ once: true }}
         className="flex flex-wrap justify-center items-start gap-10 max-w-7xl mx-auto"
       >
-        {artists.map((artist, index) => (
+        {[...artists].reverse().map((artist, index) => (
           <ArtistCard key={index} artist={artist} />
         ))}
       </motion.div>
