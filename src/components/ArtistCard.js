@@ -153,6 +153,13 @@ export default function Artists() {
         "Sec Tøm es un proyecto groove que navega entre lo raw, el minimal y el minimal moderno, con un solo objetivo: provocar movimiento. Su sonido combina lo hipnótico y lo analógico , sin dejar atrás lo digital, que generan un viaje de pura tensión y energía. El futuro aún incierto, pero en mis manos.",
       instagramUrl: "https://instagram.com/sectom.ghf",
     },
+    {
+      name: "Lukë.",
+      imageUrl: "/luke.png",
+      description:
+        "Lukë. es un productor y DJ de Buenos Aires cuyo sonido combina groove, profundidad y una estética minimal contemporánea. Con una identidad en pleno desarrollo, se perfila como una de las nuevas promesas del techno argentino.",
+      instagramUrl: "https://instagram.com/lucaslukee_",
+    },
   ];
 
   return (
