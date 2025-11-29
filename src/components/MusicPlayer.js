@@ -11,6 +11,7 @@ export default function MusicPlayer() {
   const beatportEmbedCode = `<iframe style="border-radius:12px" src="https://embed.beatport.com/?id=5543387&type=release" width="100%" height="352" frameborder="0" scrolling="no"></iframe>`;
 
   const spotifyEmbedCode = `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0LUfofmQeoa6bGYApg59qb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`;
+
   return (
     <section id="our-music" className="w-full bg-white pb-20 px-4">
       <div className="mb-16 text-center">
