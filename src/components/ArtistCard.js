@@ -160,6 +160,13 @@ export default function Artists() {
         "Lukë. es un productor y DJ de Buenos Aires cuyo sonido combina groove, profundidad y una estética minimal contemporánea. Con una identidad en pleno desarrollo, se perfila como una de las nuevas promesas del techno argentino.",
       instagramUrl: "https://instagram.com/lucaslukee_",
     },
+    {
+      name: "Juan Castillo",
+      imageUrl: "/juancastillo.png",
+      description:
+        "Juan Castillo es productor y DJ de Hurlingham, Buenos Aires. Su vínculo con la música electrónica nace desde la pista y se refleja en un sonido techno puro, dinámico y cargado de groove. Su música ha recibido support de artistas internacionales como Anfisa Letyago y Dark Key, y ha editado producciones en sellos como NETCHO.",
+      instagramUrl: "https://instagram.com/lucaslukee_",
+    },
   ];
 
   return (
