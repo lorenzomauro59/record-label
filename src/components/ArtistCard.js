@@ -165,7 +165,7 @@ export default function Artists() {
       imageUrl: "/juancastillo.png",
       description:
         "Juan Castillo es productor y DJ de Hurlingham, Buenos Aires. Su vínculo con la música electrónica nace desde la pista y se refleja en un sonido techno puro, dinámico y cargado de groove. Su música ha recibido support de artistas internacionales como Anfisa Letyago y Dark Key, y ha editado producciones en sellos como NETCHO.",
-      instagramUrl: "https://instagram.com/lucaslukee_",
+      instagramUrl: "https://instagram.com/juancastillo____",
     },
   ];
 
