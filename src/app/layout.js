@@ -7,42 +7,56 @@ import ScreenSplash from "@/components/ScreenSplash";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Holobeat",
-  description: "Techno Record Label",
+  title: "Holobeat | Techno Label",
+  description:
+    "Holobeat is an independent techno label focused on deep, minimal and hypnotic electronic music.",
+
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+
+  manifest: "/site.webmanifest",
+
+  openGraph: {
+    title: "Holobeat",
+    description:
+      "Independent techno label focused on deep, minimal and hypnotic electronic music.",
+    url: "https://holobeat.com.ar", // cambiá por el dominio real
+    siteName: "Holobeat",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Holobeat",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Holobeat",
+    description:
+      "Independent techno label focused on deep, minimal and hypnotic electronic music.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html>
-      <head>
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff"></meta>
-      </head>
-      <body>
+    <html lang="en">
+      <body className={inter.className}>
         <ScreenSplash />
-        <div className={inter.className}>
-          <Header />
-          {children}
-          <Footer className="m-8" />
-        </div>
+        <Header />
+        {children}
+        <Footer className="m-8" />
       </body>
     </html>
   );

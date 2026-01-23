@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-export default function AboutUs() {
+export default function Hero() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -21,13 +21,24 @@ export default function AboutUs() {
 
   return (
     <section
-      id="about-us"
+      id="hero"
       className="relative w-screen h-screen flex items-center justify-center overflow-hidden transition-all duration-300"
       style={{
         opacity,
         transform: `scale(${scale})`,
       }}
     >
+      {/* SEO H1 + texto oculto */}
+      <h1 className="sr-only">
+        Holobeat Records – Independent Techno & Minimal Music Label
+      </h1>
+
+      <p className="sr-only">
+        Holobeat Records is an independent techno label focused on deep, minimal
+        and hypnotic electronic music, showcasing artists and releases from
+        Argentina and the global underground scene.
+      </p>
+
       {/* Video de fondo */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -41,14 +52,12 @@ export default function AboutUs() {
       {/* Overlay oscuro */}
       <div className="absolute inset-0 bg-black bg-opacity-60 z-10" />
 
-      {/* Contenido */}
+      {/* Contenido visible */}
       <div className="relative z-20 max-w-4xl px-6 text-center flex flex-col items-center gap-8">
-        <h2 className="text-3xl md:text-5xl font-semibold tracking-wide leading-tight animate-fadeInScale mt-4"></h2>
-
         <div className="animate-fadeInScale delay-200">
           <Image
             src="/frase-holo.png"
-            alt="Holobeat statement"
+            alt="Holobeat Records statement"
             width={900}
             height={300}
             className="w-full max-w-3xl object-contain"
