@@ -78,10 +78,10 @@ export default function Artists() {
     },
     {
       name: "Lorenzo Mauro",
-      imageUrl: "/loren.png",
+      imageUrl: "/loren2.png",
       description:
-        "Lorenzo Mauro es un DJ y productor nacido en Rosario, Argentina. Se inspira en el minimal ambient y el techno de club. Viene dejando su huella artística en la escena del país desde hace años, lanzando con sellos destacados y contribuyendo activamente al panorama cultural. Siempre creando nuevos horizontes sonoros por explorar.",
-      instagramUrl: "https://instagram.com/lorenzomaurox",
+        "Lorenzo Mauro es DJ/Productor de Rosario, Argentina. Comenzó su camino como productor en 2019, publicando música en distintos sellos nacionales e internacionales y estableciéndose de manera notoria en la escena nacional. Es cofundador de Holobeat Records y desarrolla su proyecto con una visión enfocada en la exploración artística y la cultura underground.",
+      instagramUrl: "https://lorenzomauro.com.ar",
     },
     {
       name: "Le Nardo",
@@ -166,6 +166,13 @@ export default function Artists() {
       description:
         "Juan Castillo es productor y DJ de Hurlingham, Buenos Aires. Su vínculo con la música electrónica nace desde la pista y se refleja en un sonido techno puro, dinámico y cargado de groove. Su música ha recibido support de artistas internacionales como Anfisa Letyago y Dark Key, y ha editado producciones en sellos como NETCHO.",
       instagramUrl: "https://instagram.com/juancastillo____",
+    },
+    {
+      name: "Mevrek",
+      imageUrl: "/mevrek.png",
+      description:
+        "Mevrek es un DJ y productor oriundo de la Ciudad de La Plata, profundamente arraigado a la esencia clásica del minimal techno. En sus producciones busca plasmar la influencia de sus referentes junto a una impronta personal, dando lugar a tracks sólidos e intensos, con ritmos y baterías cargadas de energía, bajos potentes y una marcada presencia de atmósferas y drones hipnóticos.",
+      instagramUrl: "https://instagram.com/francomevrek___",
     },
   ];
 
