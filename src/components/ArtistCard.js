@@ -174,6 +174,13 @@ export default function Artists() {
         "Mevrek es un DJ y productor oriundo de la Ciudad de La Plata, profundamente arraigado a la esencia clásica del minimal techno. En sus producciones busca plasmar la influencia de sus referentes junto a una impronta personal, dando lugar a tracks sólidos e intensos, con ritmos y baterías cargadas de energía, bajos potentes y una marcada presencia de atmósferas y drones hipnóticos.",
       instagramUrl: "https://instagram.com/francomevrek___",
     },
+    {
+      name: "Boes",
+      imageUrl: "/boes1.jpg",
+      description:
+        "Sebastián Cardoso, a.k.a. BOES, es un artista de Comodoro Rivadavia reconocido por su energía electrizante y su conexión con el público. DJ desde 2019 y productor desde 2022, cuenta con lanzamientos en sellos como Xelima Records, U.F.O Recordings, Nebadon y AXTK, y ha compartido cabina con referentes de la escena. Su estilo combina ritmos pulsantes, melodías hipnóticas y un groove constante que da forma a viajes sonoros intensos.",
+      instagramUrl: "https://instagram.com/boes.wav",
+    },
   ];
 
   return (
