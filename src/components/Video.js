@@ -8,12 +8,13 @@ const Video = () => {
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/XarwOLDx15o?si=yFm5QsMi7paEFXdy"
+        src="https://www.youtube.com/embed/fwIn6DB9pNg?si=igTo_EgwYVJbOV-9"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
+
       <style jsx>{`
         .video-container {
           display: flex;
