@@ -11,7 +11,7 @@ export default function MusicPlayer() {
   const beatportEmbedCode = `<iframe
     title="Holobeat Records – Beatport Release"
     style="border-radius:12px"
-    src="https://embed.beatport.com/?id=6919974&type=release"
+    src="https://embed.beatport.com/?id=7047424&type=release"
     width="100%"
     height="352"
     frameborder="0"
@@ -21,7 +21,7 @@ export default function MusicPlayer() {
   const spotifyEmbedCode = `<iframe
     title="Holobeat Records – Spotify Album"
     style="border-radius:12px"
-    src="https://open.spotify.com/embed/album/6ddWMQ3LFmTiQrgFOYMK9p?utm_source=generator"
+    src="https://open.spotify.com/embed/album/6Yede5w5bNpf01twpVjILX?utm_source=generator&si=c77463065a164877"
     width="100%"
     height="352"
     frameBorder="0"
