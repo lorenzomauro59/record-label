@@ -80,7 +80,7 @@ export default function Artists() {
       name: "Lorenzo Mauro",
       imageUrl: "/loren2.png",
       description:
-        "Lorenzo Mauro es DJ/Productor de Rosario, Argentina. Comenzó su camino como productor en 2019, publicando música en distintos sellos nacionales e internacionales y estableciéndose de manera notoria en la escena nacional. Es cofundador de Holobeat Records y desarrolla su proyecto con una visión enfocada en la exploración artística y la cultura underground.",
+        "Lorenzo Mauro es DJ y productor de Rosario, Argentina. Comenzó a producir música en 2014 y desde 2019 publica regularmente en sellos nacionales e internacionales. Es cofundador de Holobeat Records, plataforma desde la que impulsa una visión artística centrada en el techno contemporáneo, la exploración sonora y el desarrollo de propuestas con identidad propia.",
       instagramUrl: "https://lorenzomauro.com.ar",
     },
     {
@@ -180,6 +180,13 @@ export default function Artists() {
       description:
         "Sebastián Cardoso, a.k.a. BOES, es un artista de Comodoro Rivadavia reconocido por su energía electrizante y su conexión con el público. DJ desde 2019 y productor desde 2022, cuenta con lanzamientos en sellos como Xelima Records, U.F.O Recordings, Nebadon y AXTK, y ha compartido cabina con referentes de la escena. Su estilo combina ritmos pulsantes, melodías hipnóticas y un groove constante que da forma a viajes sonoros intensos.",
       instagramUrl: "https://instagram.com/boes.wav",
+    },
+    {
+      name: "Void Alive",
+      imageUrl: "/void.jpeg",
+      description:
+        "Prof. Música. Pianista. Dj/Producer. Trabajador de la música.",
+      instagramUrl: "https://instagram.com/void.alive",
     },
   ];
 
