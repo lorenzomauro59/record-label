@@ -18,10 +18,22 @@ export default function MusicPlayer() {
     scrolling="no">
   </iframe>`;
 
+  <iframe
+    data-testid="embed-iframe"
+    style="border-radius:12px"
+    src="https://embed.beatport.com/?id=7344456&type=release"
+    width="100%"
+    height="352"
+    frameBorder="0"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"
+  ></iframe>;
+
   const spotifyEmbedCode = `<iframe
     title="Holobeat Records – Spotify Album"
     style="border-radius:12px"
-    src="https://open.spotify.com/embed/album/2Dbq2gLi3NEEIfRdM5moEV?utm_source=generator&si=1c5b5a736fc44efa"
+    src="https://open.spotify.com/embed/album/7DVrwCAzYLfFUoLs4z1IOv?utm_source=generator&si=8afe40fee1c84f68"
     width="100%"
     height="352"
     frameBorder="0"

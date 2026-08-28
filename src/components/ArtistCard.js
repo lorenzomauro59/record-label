@@ -188,6 +188,13 @@ export default function Artists() {
         "Prof. Música. Pianista. Dj/Producer. Trabajador de la música.",
       instagramUrl: "https://instagram.com/void.alive",
     },
+    {
+      name: "Toezch",
+      imageUrl: "/Toezch.png",
+      description:
+        "Tobías Peralta aka Toezch es un DJ y productor de Córdoba, Argentina. Desde 2018 forma parte de la escena club y underground, con presentaciones en Córdoba y Punta del Este. Su sonido se mueve dentro del techno, explorando atmósferas hipnóticas, texturas envolventes y estructuras pensadas para la pista de baile. Como productor, cuenta con lanzamientos en distintos sellos nacionales e internacionales, consolidando una identidad sonora propia.",
+      instagramUrl: "https://instagram.com/_toezch",
+    },
   ];
 
   return (
