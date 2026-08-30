@@ -11,7 +11,7 @@ export default function MusicPlayer() {
   const beatportEmbedCode = `<iframe
     title="Holobeat Records – Beatport Release"
     style="border-radius:12px"
-    src="https://embed.beatport.com/?id=7163036&type=release"
+    src="https://embed.beatport.com/?id=7344456&type=release"
     width="100%"
     height="352"
     frameborder="0"
