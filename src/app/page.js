@@ -17,8 +17,6 @@ export default function Home() {
         <div id="contact-us">
           <ContactUs />
         </div>
-        <div className="flex flex-col flex-wrap md:flex-row justify-center items-center"></div>
-        <ArtistCard />
       </div>
       <div className="mt-20">
         <Networks />
